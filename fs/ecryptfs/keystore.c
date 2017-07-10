@@ -2577,7 +2577,7 @@ ecryptfs_generate_key_packet_set(char *dest_base,
 						&written);
 				if (rc) {
 					ecryptfs_printk(KERN_WARNING, "Error "
-							"writing dek packet\n");
+							"writing dek packet %d\n",rc);
 					goto out_free;
 				}
 				(*len) += written;
