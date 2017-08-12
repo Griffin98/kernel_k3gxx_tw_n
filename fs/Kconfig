@@ -7,10 +7,6 @@ menu "File systems"
 # Use unaligned word dcache accesses
 config DCACHE_WORD_ACCESS
        bool
-	   
-config INTERRUPTIBLE_SYNC
-	bool "Support interruptible sync for Samsung Mobile Device"
-	default y
 
 # klaatu@sec
 config LOW_ORDER_SEQ_MALLOC
@@ -106,7 +102,6 @@ if BLOCK
 menu "DOS/FAT/NT Filesystems"
 
 source "fs/fat/Kconfig"
-source "fs/sdfat/Kconfig"
 source "fs/exfat/Kconfig"
 source "fs/ntfs/Kconfig"
 
